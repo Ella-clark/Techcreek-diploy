@@ -1,0 +1,168 @@
+.maindiv{
+    background-image: url(./assests/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    
+.opp{
+    height: 100vh;
+    background:rgba(20, 10, 82, 0.39)
+    
+    
+}
+// Header.jsx
+    
+nav{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    button{
+        padding: 18% 0%;
+        margin:1% 100%;
+        width:300%;
+        border: none;
+        border-radius: 3px;
+        background-color: aquamarine;
+        
+
+    }
+
+
+    .logo{
+        width: 100px;
+        height: 100px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .nav__links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav__item{
+            margin-left: 60px;
+            list-style: none;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 14px;
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    border-bottom: 2px solid white;
+                }
+
+            }
+        }
+    }
+}
+// BODY.jsx
+.bodytext{
+    position: absolute;
+    top: 20%;
+    width: 35%;
+    padding-left: 2%;
+    h1{
+        width: 100%;
+        font-size: 300%;
+        text-align: start;
+        color: white;
+
+    }
+}
+
+}
+
+// Card
+.card_container{
+    width: 40%;
+    height: 25%;
+    background-color: white;
+    position: absolute;
+    top: 68%;
+    left: 5%;
+    display: flex;
+    padding: 1%;
+    /* The animation code */
+/* The animation code */
+@keyframes example {
+    from {background-color:white ;}
+    to {background-color: lightblue;}
+}  
+  
+  
+position: absolute;
+background-color: white;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+  
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    h4{
+        color: rgb(28, 28, 226);
+    }
+    p{
+        text-align: start;
+        font-size: 14px;
+        width: 70%;
+        color: blue;
+
+    }
+    .lcc{
+        display: flex;
+        padding: 10%;
+        gap: 40%;
+        align-content: center;
+        position: relative;
+        top: -28%;
+        left: -6%;
+        .connect{
+            
+        img{
+            width: 90%;
+        }
+        
+        }
+    }
+
+    
+}
+// Members.jsx css
+.img_bg{
+    
+    width: 14%;
+    height: 31%;
+    position: relative;
+    top: 45%;
+    left: 78%;
+    .members{
+        width: 40%;
+        height: 40%;
+        border-radius: 100%;
+        justify-content: center;
+        background-color: blue;
+        position: relative;
+        top:25%;
+        left: 100%;
+        background: rgba(49, 5, 245, 0.5);
+        img{
+            width: 20%;
+            position: relative;
+            top: 35%;
+            left: 40%;
+            
+        }
+    }
+   
+    
+}
