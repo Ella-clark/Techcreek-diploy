@@ -5,7 +5,8 @@ const Datafetch = ({ blogs, loading }) => {
 
   return (
     <div className="DataContainer">
-      <div className="Blogcontainer">
+      <div className="Blogcontain">
+        <h1>Learn the creek way</h1>
         <p>
           Education doesn’t have to be expensive there are plenty of free
           courses to brush up on your IT skills that require nothing more than
@@ -15,8 +16,12 @@ const Datafetch = ({ blogs, loading }) => {
           technology trends, any of these  online Course materials can
           help you without breaking the bank.
         </p>
+        <div className=""></div>
+
       </div>
       <div className="Blogcontainer">
+        <h1>Tutorial Videos</h1>
+
         {blogs &&
           blogs.map((blog) => {
             return (

@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Header from './Components/Header';
 import Main from './Components/MAIN';
+import Member from './Components/Member';
 import Membership from './MembershipPage/Membership';
 import About from './pages/About';
 import Connectpage from './pages/connectpage';
@@ -15,7 +16,8 @@ function App() {
   return (
    <div className='layout'>
      
-     <Router>     
+     <Router>
+          
         <Routes>
             <Route path="/" element={ <Main /> }/>
             <Route path="/membership" element={ <Membership /> }/>

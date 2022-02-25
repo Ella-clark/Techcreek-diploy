@@ -1,11 +1,24 @@
 
 .DataContainer {
 
+.Blogcontain{
+ 
+  p{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+    
+    padding: 2rem 4rem;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
   .Blogcontainer {
     display: grid;
     padding: 2rem 4rem;
     gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     .card__container {
       display: flex;
       align-items: center;
