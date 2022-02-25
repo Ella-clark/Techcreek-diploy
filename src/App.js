@@ -1,19 +1,28 @@
 
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
+import Header from './Components/Header';
 import Main from './Components/MAIN';
 import Membership from './MembershipPage/Membership';
+import About from './pages/About';
+import Connectpage from './pages/connectpage';
+
+
+import Learnpage from './pages/learn';
+
 
 function App() {
   return (
    <div className='layout'>
-     <Router>
      
-     
-     
+     <Router>     
         <Routes>
             <Route path="/" element={ <Main /> }/>
             <Route path="/membership" element={ <Membership /> }/>
+            <Route path="/learn" element={ <Learnpage /> }/>
+            <Route path="/connect" element={ <Connectpage /> }/>
+            <Route path="/about" element={ <About /> }/>
+            
         </Routes>
      </Router>
 

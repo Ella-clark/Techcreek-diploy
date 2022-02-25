@@ -24,8 +24,8 @@ const Membership = () => {
             <div className="main__content">
             <Icons/>
 
-      <h5 onClick={()=>{setform(true)}}>Sign in </h5>
-      <h5 onClick={()=>{setform(false)}}>Register </h5>
+      <h5 className="signin" onClick={()=>{setform(true)}}>Sign in </h5>
+      <h5 className="register" onClick={()=>{setform(false)}}>Register </h5>
       {form?  <SignIn />:<Register />}      
         
       

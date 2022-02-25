@@ -2,11 +2,11 @@ import '../MembershipPage/membership.scss'
 const SignIn = () => {
     return ( 
         <form className='sign_form'>
-                <div className="form_control">
+                <div className="input1">
                     <input className="input" type="text" placeholder="Email" />
                 </div>
 
-                <div className="form__control">
+                <div className="input1">
                     <input className="input" type="text" placeholder="Password" />
                 </div>
 

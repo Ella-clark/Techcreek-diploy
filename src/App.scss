@@ -3,39 +3,64 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
+    animation: fade 3s ease-in;
+    position: absolute;
+    @keyframes fade {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+      
+       
+    }
     
 .opp{
     height: 100vh;
-    background:rgba(20, 10, 82, 0.39)
+    background:rgba(0, 0, 0, 0.4)
     
     
 }
 // Header.jsx
     
 nav{
+    
+       img {
+        width: 10%;
+        cursor: pointer;
+        position: relative;
+        left: -60%;
+        bottom: 10%;
+        
+      }
     display: flex;
-    width: 80%;
+    width: 120%;
     align-items: center;
     justify-content: space-between;
 
     padding: 20px;
 
     button{
-        padding: 18% 0%;
-        margin:1% 100%;
-        width:300%;
+        padding: 7% 0%;
+        margin-left: 50%;
+        width:120%;
         border: none;
         border-radius: 3px;
-        background-color: aquamarine;
+        background-color:#e92929;
+        color: white;
         
 
     }
 
 
     .logo{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 5%;
 
         img{
             width: 100%;
@@ -65,7 +90,9 @@ nav{
             }
         }
     }
-}
+    
+    
+}   
 // BODY.jsx
 .bodytext{
     position: absolute;
@@ -77,7 +104,10 @@ nav{
         font-size: 300%;
         text-align: start;
         color: white;
-
+        
+    }
+    p{
+        color: white;
     }
 }
 
@@ -85,37 +115,54 @@ nav{
 
 // Card
 .card_container{
-    width: 40%;
-    height: 25%;
-    background-color: white;
+    border-radius: 5px;
+    animation-name: slideInFromLeft ;
+    animation-duration: 4s;
+    width: 35%;
+    height: 20%;
+    background-color: #1d06ec;
     position: absolute;
-    top: 68%;
-    left: 5%;
+    top: 75%;
+    left: 3%;
     display: flex;
     padding: 1%;
-    /* The animation code */
-/* The animation code */
-@keyframes example {
-    from {background-color:white ;}
-    to {background-color: lightblue;}
-}  
   
+// ANIMATIONS CODE
+@keyframes slideInFromLeft {
+    0%  {
+       right:-100px;
+    }
   
-position: absolute;
-background-color: white;
-animation-name: example;
-animation-duration: 4s;
-animation-iteration-count: infinite;
-  
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  100%  {
+      left:0px ;
+    }
+}
+
+box-shadow: rgba(215, 215, 223, 0.2) 0px 7px 29px 0px;
     h4{
         color: rgb(28, 28, 226);
+    }
+    h6{
+        @keyframes example {
+            from {color:burlywood ;}
+            to {color: white;}
+        }  
+          
+          
+        position: relative;
+        color: blue;
+    
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+          
     }
     p{
         text-align: start;
         font-size: 14px;
         width: 70%;
         color: blue;
+        
 
     }
     .lcc{
@@ -140,15 +187,15 @@ animation-iteration-count: infinite;
 // Members.jsx css
 .img_bg{
     
-    width: 14%;
-    height: 31%;
+    width: 10%;
+    height: 30%;
     position: relative;
-    top: 45%;
-    left: 78%;
+    top: 58%;
+    left: 81%;
     .members{
-        width: 40%;
-        height: 40%;
-        border-radius: 100%;
+        width: 51%;
+        height: 39%;
+        border-radius: 101%;
         justify-content: center;
         background-color: blue;
         position: relative;
@@ -165,4 +212,20 @@ animation-iteration-count: infinite;
     }
    
     
+      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

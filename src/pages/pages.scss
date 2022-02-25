@@ -1,0 +1,112 @@
+.connectimg{
+  animation: slide 40s infinite;
+  background-image: url('../assests/connect.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center;
+  position: relative;
+  top: 1%;
+  @keyframes slide {
+    0%{
+      background-image: url('../assests/connect.jpg');
+    }
+    20%{
+      background-image: url('../assests/connect.jpg');
+    }
+      
+    40%{
+      background-image: url('../Components/assests/fest.jpg');
+    }
+    60%{
+      background-image: url('../Components/assests/fest.jpg');
+    }
+    80%{
+      background-image: url('../assests/bg-membership.jpg');
+    }
+    100%{
+      background-image: url('../assests/bg-membership.jpg');
+    }
+    0%{
+      background-image: url('../assests/bg-membership.jpg');
+    }
+
+    
+  }
+ 
+
+  .overlay{
+    
+      height: 100vh;
+      background:rgba(0, 0, 0, 0.8);
+
+     
+     .connectlinks{
+.hback{
+  font-size: 1rem;
+  position: absolute;
+  right: 3%;
+  color: white;
+}
+     }
+     
+  }
+  .connecttext{
+    padding-top: 13%;
+    h1{
+      color: white;
+      font-size: 4rem;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bolder;
+      padding-left: 2%;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    p{
+      color: white;
+      font-size: 0.9rem;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: normal;
+      text-align: center;
+      padding-left: 3%;
+    }
+    
+  }
+// width: 10%;
+// height: 10%;
+// position: absolute;
+
+// img{
+//   width: 10%;
+//   height: 10%;
+// }
+    
+}
+
+.Connect_main_container {
+    padding: 20px;
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  // ABOUT
+  .aboutbtn{
+    button{
+      padding: 10px 40px;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 7px;
+      margin: left 40px; ;
+    }
+  }
+
+
+
+

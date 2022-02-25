@@ -58,15 +58,7 @@
   }
 }
 
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
 
-  100% {
-    transform: translateX(0);
-  }
-}
 
 // logo container 
 
@@ -116,6 +108,16 @@
       font-weight: 500;
       margin-left:  20%;
       margin-top: 20%;
+      animation: slideInFromBjottom 3s 2s 4s 3s top fill-mode;
+      @keyframes slideInFromBjottom {
+        0% {
+          left:-100%;
+        }
+      
+        100% {
+          right:0%;
+        }
+      }
       a{
         text-decoration: none;
         color: white;
@@ -150,15 +152,18 @@
 // Footer
 
 .footer__container{
-  position: relative;
+  position: absolute;
+  
 
 
   .footer__items{
-    position: absolute;
+    position: relative;
+    left: 110%;
     width: 400px;
     display: flex;
     justify-content: space-between;
-    left: 30%;
+    margin-top: 10px;
+    
   }
 
   .footer__links{
@@ -180,38 +185,89 @@
     background-color: blue;
 }
 .Reg_form{
+  margin: 0% 10%;
+  position: relative;
+  top: 38%;
+  left: -14%;
     background-color: transparent;
-    input{
-        width: 100%;
-        height: 40px;
-        margin-bottom: 5%;    
-    }
-    label{
-        input{
-            width: 10%;
-        }
-    }
+    
+    .input{
+      
+      width: 130%;
+      height: 40px;
+      margin-bottom: 10%;    
+  }
     select{
-        width: 100%;
-        height: 40px;
-        margin-bottom: 5%;   
+    
+      width: 170%;
+      height: 40px;
+      margin-top: 3%;
+      margin-bottom: 10%;    
+  }
+  label{
+    input{
+        width: 10%;
+        margin-bottom: 0;
     }
+    }
+button{
+  width: 170%;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: lightgreen;
+  color: white;
+}
 }
 
+
 .sign_form{
+ 
+  margin: 0% 10%;
+  position: relative;
+  top: 38%;
+  left: -12%;
     background-color: transparent;
-    .form_control{
-        width: 100%;
-        height: 40px;
-        margin-bottom: 5%;
-        color: blue;    
+    
+    input{
+      width: 130%;
+      height: 40px;
+      margin-bottom: 10%;    
+  }
+   
+  label{
+    input{
+        width: 10%;
+        margin-bottom: 0;
     }
+    }
+button{
+  width: 120%;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+}
 }
 
 .Back{
     position: absolute;
     top: 1%;
+    right: 1%;
+  
 }
+h5{
+  color: white;
+  position: relative;
+  top: 30%;
+  left: 15%;
+  padding-right: 17px;
+  font-size: 16px;
+  cursor: pointer;
 
+  
+
+}
 
 

@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 const Register = () => {
     return ( 
         <form className='Reg_form'>
-        <div className="form__control">
+        <div className="input">
             <input className="input" type="text" placeholder="First Name, Last Name" />
         </div>
 
-        <div className="form__control">
+        <div className="input">
             <input className="input" type="text" placeholder="email" />
         </div>
 
         <div className="form__control">
-                <select className="input">
+                <select className="select">
                     <option value>Please select.....</option>
                     <option value="enthusiast">Enthusiast</option>
                     <option value="service_professional">service professional</option>
@@ -21,15 +21,15 @@ const Register = () => {
                 </select>
             </div>
         
-            <div className="form__control">
+            <div className="input">
             <input className="input" type="text" placeholder=" Create Passwword" />
-            <input className="input" type="text" placeholder=" Confirm Passwword" />
+            
         </div>
 
 
     <div className="control_penal">
         <label>
-            <input type="checkbox" name="Check 1"/> Accept <Link to = '/termsandcondition'>Terms and conditiion</Link>
+            <input type="checkbox" name="Check 1"/> Accept Terms an Conditions
         </label>
         
     </div>

@@ -7,7 +7,7 @@ const Icons = () => {
         
         <div className="icons__container">
             <div className="Back"><Link to = '/'>Back</Link></div>
-         <a className="logo__box" href=""><img src={logo} alt="" /></a>
+         <Link className="logo__box" to='/'><img src={logo} alt="" /></Link>
         </div>
      );
 }
